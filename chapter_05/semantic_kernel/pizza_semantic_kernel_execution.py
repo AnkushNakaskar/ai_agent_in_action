@@ -57,7 +57,7 @@ async def run_prompt():
             service_id=service_id,
             ai_model_id="gpt-4o-mini",
             api_key=api_key,
-            org_id="org-MAd9CASqY83u8gtOXsyQP5Lx",
+            org_id="<ORG-ID>",
             async_client=openai_client_with_custom_http
         )
     kernel.add_service(chat_completion_service)
