@@ -26,4 +26,4 @@ Higher TF–IDF scores imply greater importance
 * A cosine distance of 0 means identical items, and 2 indicates complete opposites.
 * ![img.png](img.png)
 
-
+* TF-IDF : it’s unreliable because it only counts word frequency and doesn’t understand the relationships between words
