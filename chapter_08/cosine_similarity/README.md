@@ -27,3 +27,6 @@ Higher TF–IDF scores imply greater importance
 * ![img.png](img.png)
 
 * TF-IDF : it’s unreliable because it only counts word frequency and doesn’t understand the relationships between words
+* At a basic level, an agent profile is a set of prompts describing the agent. 
+* It may include other external elements related to actions/tools, knowledge, memory, reasoning, evaluation, planning, and feedback. 
+* The combination of these elements comprises an entire agent prompt profile.
