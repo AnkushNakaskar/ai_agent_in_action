@@ -30,3 +30,4 @@ Higher TF–IDF scores imply greater importance
 * At a basic level, an agent profile is a set of prompts describing the agent. 
 * It may include other external elements related to actions/tools, knowledge, memory, reasoning, evaluation, planning, and feedback. 
 * The combination of these elements comprises an entire agent prompt profile.
+* Problems like this can happen when we remove feedback in LLM interactions and agentic systems. Feedback can guide the model to correct itself.
