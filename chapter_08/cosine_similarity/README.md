@@ -31,3 +31,9 @@ Higher TF–IDF scores imply greater importance
 * It may include other external elements related to actions/tools, knowledge, memory, reasoning, evaluation, planning, and feedback. 
 * The combination of these elements comprises an entire agent prompt profile.
 * Problems like this can happen when we remove feedback in LLM interactions and agentic systems. Feedback can guide the model to correct itself.
+
+
+#### Listing 11.8 Generating feedback
+* the correct answer is 27, please review what you did wrong and suggest 
+* feedback you could give yourself when trying to solve similar future problems
+* Entering this after the model answers the question wrong will generate feedback that you can use to guide the model through prompting or as part of system instructions. 
