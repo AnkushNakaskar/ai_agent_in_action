@@ -54,4 +54,13 @@ Content snippet: <p>Here is the new file copy dialog box in Longhorn (via Karan)
 ------------------------------------------------------------
 ankush.nakaskar@PP-M4QYWHM2GC ai_agent_in_action % 
 
- ``` 
+ ```
+
+### RAG pattern using Vector DB now look like below : 
+![RAG_PATTERN.png](img/RAG_PATTERN.png)
+
+* As explain in diagram : 
+  * The question the user asks first gets converted into embeddings and then searched in Redis using a hybrid search index to find similar chunks, which are returned as search results. 
+  * As we saw earlier, the blog posts have already been injected into the Redis database and indexed. Once we have the results, we formulate the LLM prompt by combining the original questions and the chunks retrieved to answer from. 
+  * These are passed into the prompt itself before finally calling the LLM to generate a response.
+* Now the final RAG pipeline where we submit the Vector DB response and get the human-readable output, you can refer to : [rag_pipeline.py](rag_pipeline.py)
