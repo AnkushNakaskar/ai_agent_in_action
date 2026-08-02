@@ -1,21 +1,7 @@
-import numpy as np
-import feedparser
-import redis
-from redis.commands.search.field import TagField, TextField, VectorField
-from redis.commands.search.index_definition import IndexDefinition, IndexType
-from sentence_transformers import SentenceTransformer
-import ssl
 import os
-
 # 1. Disable SSL verification for Hugging Face downloads
 os.environ["HF_HUB_DISABLE_SSL_VERIFICATION"] = "1"
 
-import feedparser
-import numpy as np
-import redis
-from redis.commands.search.field import TagField, TextField, VectorField
-from redis.commands.search.index_definition import IndexDefinition, IndexType
-from sentence_transformers import SentenceTransformer
 # 1. Force all Python HTTP libraries to ignore SSL validation
 os.environ["CURL_CA_BUNDLE"] = ""
 os.environ["REQUESTS_CA_BUNDLE"] = ""
@@ -23,14 +9,9 @@ os.environ["PYTHONHTTPSVERIFY"] = "0"
 os.environ["HF_HUB_DISABLE_SSL_VERIFICATION"] = "1"
 
 # Standard imports follow below...
-import feedparser
-import numpy as np
-import redis
 from redis.commands.search.field import TagField, TextField, VectorField
 from redis.commands.search.index_definition import IndexDefinition, IndexType
-from sentence_transformers import SentenceTransformer
 
-import os
 import ssl
 import httpx
 
@@ -50,8 +31,6 @@ httpx.Client.__init__ = _patched_client_init
 import feedparser
 import numpy as np
 import redis
-from redis.commands.search.field import TagField, TextField, VectorField
-from redis.commands.search.index_definition import IndexDefinition, IndexType
 from sentence_transformers import SentenceTransformer
 
 print("Loading local embedding model...")
